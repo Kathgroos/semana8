@@ -10,7 +10,7 @@
         }
     ],
 
-    "routers": [
+    "routes": [
         {
             "src": "/(.*)",
             "dest": "python_heroku_task/wsgi.py"
