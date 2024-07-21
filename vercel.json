@@ -1,0 +1,19 @@
+{
+    "builds": [
+        {
+            "src": "python_heroku_task/wsgi.py",
+            "user": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
+        }
+    ],
+
+    "routers": [
+        {
+            "src": "/(.*)",
+            "dest": "python_heroku_task/wsgi.py"
+        }
+    ]
+}
